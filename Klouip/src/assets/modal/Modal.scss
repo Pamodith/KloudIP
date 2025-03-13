@@ -1,0 +1,55 @@
+@import '../../assets/styles/loader';
+
+.button{
+    background-color: navy;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: .5s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: .5s ease-in-out;
+        transform: translateY(-10px);
+    }
+}
+
+.modal{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 2rem;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .popup{
+        position: relative;
+        
+        .close{
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            width: 16px;
+            height: 16px;
+            rotate: -90deg;
+            transition: .5s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                rotate: 90deg;
+                transition: .5s;
+            }
+
+        }
+
+        .content{
+            padding: 3rem;
+
+            h1{
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+}
